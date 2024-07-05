@@ -1,0 +1,68 @@
+@import '../color';
+.banner{
+    padding: 25px;
+    width: 100vw;
+    height: 70vh;
+    background-color: #f6f2e6;
+    .carousel{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        >div{
+            @include yeseva-one-regular;
+            height: 45vh;
+            flex: 0 0 33%;
+            display: flex;
+            color: white;
+            font-size: 50px;
+            justify-content: center;
+            align-items: end;
+            &.c1{
+                background-image: url(../../img/carousel1.jpg);
+                // background-color: palegreen;
+                background-size: cover;
+                background-position: center;
+            }
+            &.c2{
+                background-image: url(../../img/carousel3.jpg);
+                // background-color: palegreen;
+                background-size: cover;
+                background-position: center;
+            }
+            &.c3{
+                background-image: url(../../img/carousel2.jpg);
+                // background-color: palegreen;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+    .title{
+        // background-color: aqua;
+        margin: 25px 0 ;
+        text-align: center;
+        color: $secondary;
+        p{
+            @include josefin-sans-regular;
+            text-transform: uppercase;
+        }
+        h1{
+            margin: 25px 0;
+            font-size: 50px;
+            @include parisienne-regular;
+            font-weight: 700;
+        }
+    }
+    @media (min-width:768px) {
+        .carousel{
+            >div{
+                font-size: 70px;
+            }
+        }
+        .title{
+            h1{
+                font-size: 70px;
+            }
+        }
+    }
+}

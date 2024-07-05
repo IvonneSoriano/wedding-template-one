@@ -1,0 +1,44 @@
+@import "color";
+@import "./components/scrollbar";
+@import "./components/banner";
+@import "./components/player";
+@import "./components/ourStory";
+@import "./components/weddingDetails";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: $main;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.leaf {
+  position: fixed;
+  width: 50%;
+  &.b {
+    &1 {
+      top: -15%;
+      right: -30%;
+    }
+    &2 {
+      top: -15%;
+      left: -30%;
+    }
+  }
+  @media (min-width:768px) {
+    width: 25%;
+    &.b{
+        &1{
+            top: -20%;
+            right: -15%;
+        }
+        &2 {
+            top: -15%;
+            left: -15%;
+          }
+    }
+  }
+}

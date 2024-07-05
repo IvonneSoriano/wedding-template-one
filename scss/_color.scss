@@ -1,0 +1,56 @@
+$main: #f6f2e6;
+$secondary: hsl(83, 23%, 31%);
+$shade: #d6dee7;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Parisienne&family=Yeseva+One&display=swap");
+
+@mixin yeseva-one-regular {
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 700
+
+@mixin josefin-sans-regular {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin parisienne-regular {
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  @include parisienne-regular;
+  color: $secondary;
+  font-weight: 700;
+  font-size: 60px;
+}
+h3 {
+  @include josefin-sans-regular();
+  text-transform: uppercase;
+  color: $secondary;
+  font-weight: 700;
+  font-size: 30px;
+}
+.btn {
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 1px;
+  background-color: $secondary;
+  color: $main;
+  opacity: 98%;
+  border: none;
+  -webkit-box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.75);
+  font-weight: 700;
+  &:hover {
+    opacity: 100%;
+    background-color: $secondary;
+  }
+}

@@ -1,0 +1,512 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Parisienne&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Parisienne&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Parisienne&family=Yeseva+One&display=swap");
+h2 {
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(83, 23%, 31%);
+  font-weight: 700;
+  font-size: 60px;
+}
+
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: hsl(83, 23%, 31%);
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 1px;
+  background-color: hsl(83, 23%, 31%);
+  color: #f6f2e6;
+  opacity: 98%;
+  border: none;
+  box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.75);
+  font-weight: 700;
+}
+.btn:hover {
+  opacity: 100%;
+  background-color: hsl(83, 23%, 31%);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #d6dee7;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: hsl(83, 23%, 31%);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(83, 23%, 31%);
+}
+
+h2 {
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(83, 23%, 31%);
+  font-weight: 700;
+  font-size: 60px;
+}
+
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: hsl(83, 23%, 31%);
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 1px;
+  background-color: hsl(83, 23%, 31%);
+  color: #f6f2e6;
+  opacity: 98%;
+  border: none;
+  box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.75);
+  font-weight: 700;
+}
+.btn:hover {
+  opacity: 100%;
+  background-color: hsl(83, 23%, 31%);
+}
+
+.banner {
+  padding: 25px;
+  width: 100vw;
+  height: 70vh;
+  background-color: #f6f2e6;
+}
+.banner .carousel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.banner .carousel > div {
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+  height: 45vh;
+  flex: 0 0 33%;
+  display: flex;
+  color: white;
+  font-size: 50px;
+  justify-content: center;
+  align-items: end;
+}
+.banner .carousel > div.c1 {
+  background-image: url(../../img/carousel1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.banner .carousel > div.c2 {
+  background-image: url(../../img/carousel3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.banner .carousel > div.c3 {
+  background-image: url(../../img/carousel2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.banner .title {
+  margin: 25px 0;
+  text-align: center;
+  color: hsl(83, 23%, 31%);
+}
+.banner .title p {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.banner .title h1 {
+  margin: 25px 0;
+  font-size: 50px;
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .banner .carousel > div {
+    font-size: 70px;
+  }
+  .banner .title h1 {
+    font-size: 70px;
+  }
+}
+
+h2 {
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(83, 23%, 31%);
+  font-weight: 700;
+  font-size: 60px;
+}
+
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: hsl(83, 23%, 31%);
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 1px;
+  background-color: hsl(83, 23%, 31%);
+  color: #f6f2e6;
+  opacity: 98%;
+  border: none;
+  box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.75);
+  font-weight: 700;
+}
+.btn:hover {
+  opacity: 100%;
+  background-color: hsl(83, 23%, 31%);
+}
+
+.tracker-player {
+  margin: 75px 0;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.tracker-player .player {
+  position: relative;
+  height: 100px;
+  z-index: 3;
+}
+.tracker-player .player .player-track {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  left: 15px;
+  padding: 13px 22px 10px 184px;
+  background-color: rgba(35, 31, 32, 0.05);
+  border-radius: 15px 15px 0 0;
+  transition: top 0.3s ease;
+  box-sizing: unset;
+  z-index: 1;
+}
+.tracker-player .player .player-track p {
+  margin: 0 0 10px;
+}
+.tracker-player .player .player-track .progress-container {
+  background-color: rgba(35, 31, 32, 0.05);
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 5px;
+  width: 100%;
+}
+.tracker-player .player .player-track .progress-container .progress {
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+.tracker-player .player .player-track.active {
+  top: -92px;
+}
+.tracker-player .player .player-content {
+  position: relative;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 30px 80px #656565;
+  border-radius: 15px;
+  z-index: 2;
+}
+.tracker-player .player .player-content .album-art {
+  position: absolute;
+  top: -40px;
+  width: 115px;
+  height: 115px;
+  margin-left: 40px;
+  transform: rotate(0);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 10px #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.tracker-player .player .player-content .album-art.active {
+  top: -60px;
+  box-shadow: 0 0 0 4px #fff7f7, 0 30px 50px -15px #afb7c1;
+}
+.tracker-player .player .player-content .album-art.active::after {
+  z-index: 1;
+  animation: rotateCover 3s linear 0s infinite forwards;
+}
+.tracker-player .player .player-content .album-art::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0;
+  left: 0;
+  width: 115px;
+  height: 115px;
+  background-image: url(../img/carousel1.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+.tracker-player .player .player-content .album-art::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  margin: -10px auto 0 auto;
+  background-color: #d6dee7;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px #fff;
+  z-index: 2;
+}
+.tracker-player .player .player-content .album-art img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 100;
+  z-index: -1;
+  transition: all 0.1s linear;
+}
+.tracker-player .player .player-content .album-art .buffer-box {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  height: 13px;
+  color: #1f1f1f;
+  font-size: 13px;
+  font-family: Helvetica;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1;
+  padding: 6px;
+  margin: -12px auto 0 auto;
+  background-color: hsla(0, 0%, 100%, 0.19);
+  opacity: 0;
+  z-index: 2;
+}
+.tracker-player .player .player-content .player-controls {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0 5px 0 160px;
+  overflow: hidden;
+  box-sizing: unset;
+}
+.tracker-player .player .player-content .player-controls .control {
+  width: 33.33%;
+  padding: 12px 0;
+  transition: all 0.2s ease;
+}
+.tracker-player .player .player-content .player-controls .control .button {
+  box-sizing: unset;
+  width: 26px;
+  height: 26px;
+  padding: 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.tracker-player .player .player-content .player-controls .control .button i {
+  display: block;
+  color: #d6dee7;
+  font-size: 26px;
+  text-align: center;
+  line-height: 1;
+  transition: all 0.2s ease;
+}
+.tracker-player .player .player-content .player-controls .control:hover .button {
+  background-color: #d6d6de;
+}
+.tracker-player .player .player-content .player-controls .control:hover .button i {
+  color: #fff;
+}
+
+@keyframes rotateCover {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.our-story {
+  padding: 25px;
+  width: 100%;
+  min-height: 50vh;
+}
+.our-story .details {
+  text-align: center;
+}
+
+.wedding-details {
+  width: 100%;
+  text-align: center;
+}
+.wedding-details h2 {
+  padding: 25px;
+}
+.wedding-details.template1 .locations {
+  justify-content: center;
+}
+.wedding-details.template1 .locations .location {
+  background-color: hsl(83, 23%, 31%);
+  color: #f6f2e6 !important;
+  flex: 0 0 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.wedding-details.template1 .locations .location h3 {
+  color: #f6f2e6 !important;
+}
+.wedding-details.template1 .locations .location.info {
+  order: 2;
+  min-height: 35vh;
+}
+.wedding-details.template1 .locations .location.img {
+  order: 1;
+  width: 100%;
+}
+.wedding-details.template1 .locations .location.img img {
+  width: 100%;
+}
+.wedding-details.template1 .locations .location .time {
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.wedding-details.template1 .locations .location .btn, .wedding-details.template1 .locations .location p {
+  margin-top: 15px;
+}
+.wedding-details.template1 .locations.reception .location.info {
+  order: 2;
+}
+.wedding-details.template1 .locations.reception .location.img {
+  order: 1;
+}
+.wedding-details .locations {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .wedding-details.template1 .locations {
+    justify-content: center;
+  }
+  .wedding-details.template1 .locations .location {
+    flex: 0 0 50%;
+    min-height: 100%;
+  }
+  .wedding-details.template1 .locations .location.img {
+    width: 100%;
+  }
+  .wedding-details.template1 .locations .location.img img {
+    width: 100%;
+  }
+  .wedding-details.template1 .locations .location .time {
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .wedding-details.template1 .locations .location .btn, .wedding-details.template1 .locations .location p {
+    margin-top: 15px;
+  }
+  .wedding-details.template1 .locations.ceremony .location.info {
+    order: 1;
+  }
+  .wedding-details.template1 .locations.ceremony .location.img {
+    order: 2;
+  }
+  .wedding-details .locations {
+    width: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #f6f2e6;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.leaf {
+  position: fixed;
+  width: 50%;
+}
+.leaf.b1 {
+  top: -15%;
+  right: -30%;
+}
+.leaf.b2 {
+  top: -15%;
+  left: -30%;
+}
+@media (min-width: 768px) {
+  .leaf {
+    width: 25%;
+  }
+  .leaf.b1 {
+    top: -20%;
+    right: -15%;
+  }
+  .leaf.b2 {
+    top: -15%;
+    left: -15%;
+  }
+}/*# sourceMappingURL=rp-style.css.map */
