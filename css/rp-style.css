@@ -27,14 +27,17 @@ h3 {
   border-radius: 1px;
   background-color: hsl(83, 23%, 31%);
   color: #f6f2e6;
-  opacity: 98%;
+  opacity: 95%;
   border: none;
   box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.75);
   font-weight: 700;
 }
 .btn:hover {
   opacity: 100%;
-  background-color: hsl(83, 23%, 31%);
+}
+.btn.white {
+  background-color: white;
+  color: hsl(83, 23%, 31%);
 }
 
 ::-webkit-scrollbar {
@@ -84,14 +87,17 @@ h3 {
   border-radius: 1px;
   background-color: hsl(83, 23%, 31%);
   color: #f6f2e6;
-  opacity: 98%;
+  opacity: 95%;
   border: none;
   box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.75);
   font-weight: 700;
 }
 .btn:hover {
   opacity: 100%;
-  background-color: hsl(83, 23%, 31%);
+}
+.btn.white {
+  background-color: white;
+  color: hsl(83, 23%, 31%);
 }
 
 .banner {
@@ -218,14 +224,17 @@ h3 {
   border-radius: 1px;
   background-color: hsl(83, 23%, 31%);
   color: #f6f2e6;
-  opacity: 98%;
+  opacity: 95%;
   border: none;
   box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.75);
   font-weight: 700;
 }
 .btn:hover {
   opacity: 100%;
-  background-color: hsl(83, 23%, 31%);
+}
+.btn.white {
+  background-color: white;
+  color: hsl(83, 23%, 31%);
 }
 
 .tracker-player {

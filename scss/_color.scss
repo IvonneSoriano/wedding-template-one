@@ -43,7 +43,7 @@ h3 {
   border-radius: 1px;
   background-color: $secondary;
   color: $main;
-  opacity: 98%;
+  opacity: 95%;
   border: none;
   -webkit-box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 17px -12px rgba(0, 0, 0, 0.75);
@@ -51,6 +51,10 @@ h3 {
   font-weight: 700;
   &:hover {
     opacity: 100%;
-    background-color: $secondary;
+    // background-color: $secondary;
+  }
+  &.white{
+    background-color: white;
+    color: $secondary;
   }
 }
