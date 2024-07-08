@@ -98,7 +98,34 @@ h3 {
   padding: 25px;
   width: 100vw;
   height: 70vh;
+  position: relative;
+  overflow-x: hidden;
   background-color: #f6f2e6;
+}
+.banner .leaf {
+  position: absolute;
+  width: 50%;
+}
+.banner .leaf.b1 {
+  top: -15%;
+  right: -30%;
+}
+.banner .leaf.b2 {
+  top: -15%;
+  left: -30%;
+}
+@media (min-width: 768px) {
+  .banner .leaf {
+    width: 25%;
+  }
+  .banner .leaf.b1 {
+    top: -20%;
+    right: -15%;
+  }
+  .banner .leaf.b2 {
+    top: -15%;
+    left: -15%;
+  }
 }
 .banner .carousel {
   display: flex;
@@ -153,8 +180,12 @@ h3 {
   font-weight: 700;
 }
 @media (min-width: 768px) {
+  .banner {
+    height: 100vh;
+  }
   .banner .carousel > div {
     font-size: 70px;
+    height: 65vh;
   }
   .banner .title h1 {
     font-size: 70px;
@@ -198,7 +229,7 @@ h3 {
 }
 
 .tracker-player {
-  margin: 75px 0;
+  margin: 70px 0;
   padding: 25px;
   display: flex;
   align-items: center;
@@ -415,17 +446,21 @@ h3 {
   order: 2;
   min-height: 35vh;
 }
+.wedding-details.template1 .locations .location.info p {
+  font-size: 20px;
+}
+.wedding-details.template1 .locations .location.info .time {
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
 .wedding-details.template1 .locations .location.img {
   order: 1;
   width: 100%;
 }
 .wedding-details.template1 .locations .location.img img {
   width: 100%;
-}
-.wedding-details.template1 .locations .location .time {
-  font-family: "Yeseva One", serif;
-  font-weight: 400;
-  font-style: normal;
 }
 .wedding-details.template1 .locations .location .btn, .wedding-details.template1 .locations .location p {
   margin-top: 15px;
@@ -474,6 +509,159 @@ h3 {
   }
 }
 
+.agenda {
+  padding: 25px;
+  width: 100vw;
+  height: auto;
+}
+.agenda h2 {
+  text-align: center;
+}
+.agenda .planner {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.agenda .planner .wrap {
+  max-height: 116px;
+}
+.agenda .planner .wrap .plan {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  width: 50%;
+  text-align: right;
+}
+.agenda .planner .wrap .plan img {
+  width: 60px;
+}
+.agenda .planner .wrap .plan .heart {
+  position: absolute;
+  left: 105%;
+  top: -1%;
+  z-index: 1;
+}
+.agenda .planner .wrap .plan .heart img {
+  width: 20px;
+}
+.agenda .planner .wrap .plan hr {
+  transform: rotate(90deg);
+  width: 116px;
+  left: 80%;
+  position: absolute;
+  top: 50%;
+  /* background: pink; */
+  height: 2px;
+  background-color: hsl(83, 23%, 31%);
+  border: none;
+}
+.agenda .planner .wrap .plan .detail {
+  width: auto;
+}
+.agenda .planner .wrap .plan .detail p {
+  padding: 5px 10px;
+}
+.agenda .planner .wrap .plan .detail .text {
+  background-color: hsl(83, 23%, 31%);
+  padding: 5px 10px;
+  color: white;
+  border-radius: 20px;
+  display: inline-block;
+}
+@media (max-width: 768px) {
+  .agenda .planner .wrap:nth-child(even) {
+    display: flex;
+    justify-content: end;
+  }
+  .agenda .planner .wrap:nth-child(even) .plan {
+    text-align: center;
+  }
+  .agenda .planner .wrap:nth-child(even) .plan .heart {
+    left: 5%;
+  }
+  .agenda .planner .wrap:nth-child(even) .plan hr {
+    left: -20%;
+  }
+}
+@media (min-width: 768px) {
+  .agenda .planner {
+    margin: 30px 0;
+    flex-direction: row;
+  }
+  .agenda .planner .wrap {
+    max-height: unset;
+    flex: 0 0 16.6666666667%;
+  }
+  .agenda .planner .wrap .plan {
+    text-align: left;
+    width: 100%;
+    position: relative;
+  }
+  .agenda .planner .wrap .plan .heart {
+    left: -1%;
+    top: 55%;
+    transform: translateY(-50%);
+  }
+  .agenda .planner .wrap .plan .heart img {
+    width: 20px;
+  }
+  .agenda .planner .wrap .plan hr {
+    transform: rotate(0deg);
+    position: relative;
+    width: auto;
+    left: unset;
+    top: unset;
+    margin: 20px 0;
+  }
+  .agenda .planner .wrap .plan .detail {
+    width: auto;
+  }
+  .agenda .planner .wrap .plan .detail .text {
+    max-width: 75%;
+  }
+}
+
+.rules {
+  padding: 25px;
+  background-color: hsl(83, 23%, 31%);
+  color: white;
+  text-align: center;
+}
+.rules h3 {
+  color: #f6f2e6;
+}
+.rules li {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 5px 0;
+}
+
+.gifts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gifts h2 {
+  text-align: center;
+}
+.gifts img {
+  height: 100px;
+  margin: 10px 0;
+}
+.gifts a.btn {
+  display: inline-block;
+  text-decoration: none !important;
+  width: auto;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -485,28 +673,16 @@ body {
   overflow-x: hidden;
 }
 
-.leaf {
-  position: fixed;
-  width: 50%;
+section {
+  padding: 25px;
 }
-.leaf.b1 {
-  top: -15%;
-  right: -30%;
-}
-.leaf.b2 {
-  top: -15%;
-  left: -30%;
-}
-@media (min-width: 768px) {
-  .leaf {
-    width: 25%;
-  }
-  .leaf.b1 {
-    top: -20%;
-    right: -15%;
-  }
-  .leaf.b2 {
-    top: -15%;
-    left: -15%;
-  }
+
+.madeby {
+  color: #f6f2e6;
+  background-color: hsl(83, 23%, 31%);
+  text-align: center;
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+  padding: 25px;
 }/*# sourceMappingURL=rp-style.css.map */

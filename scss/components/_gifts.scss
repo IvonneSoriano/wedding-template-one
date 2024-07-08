@@ -1,0 +1,20 @@
+.gifts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    text-align: center;
+  }
+  img {
+    height: 100px;
+    margin: 10px 0;
+  }
+  a {
+    &.btn {
+      display: inline-block;
+      text-decoration: none !important;
+      width: auto;
+    }
+  }
+}
