@@ -48,19 +48,19 @@
             justify-content: center;
             align-items: end;
             &.c1{
-                background-image: url(../../img/carousel1.jpg);
+                background-image: url(./../img/carousel1.jpg);
                 // background-color: palegreen;
                 background-size: cover;
                 background-position: center;
             }
             &.c2{
-                background-image: url(../../img/carousel3.jpg);
+                background-image: url(./../img/carousel3.jpg);
                 // background-color: palegreen;
                 background-size: cover;
                 background-position: center;
             }
             &.c3{
-                background-image: url(../../img/carousel2.jpg);
+                background-image: url(./../img/carousel2.jpg);
                 // background-color: palegreen;
                 background-size: cover;
                 background-position: center;

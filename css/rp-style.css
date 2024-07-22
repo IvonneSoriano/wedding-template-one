@@ -151,17 +151,17 @@ h3 {
   align-items: end;
 }
 .banner .carousel > div.c1 {
-  background-image: url(../../img/carousel1.jpg);
+  background-image: url(../img/carousel1.jpg);
   background-size: cover;
   background-position: center;
 }
 .banner .carousel > div.c2 {
-  background-image: url(../../img/carousel3.jpg);
+  background-image: url(../img/carousel3.jpg);
   background-size: cover;
   background-position: center;
 }
 .banner .carousel > div.c3 {
-  background-image: url(../../img/carousel2.jpg);
+  background-image: url(../img/carousel2.jpg);
   background-size: cover;
   background-position: center;
 }
