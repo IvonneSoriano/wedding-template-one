@@ -103,7 +103,7 @@ h3 {
 .banner {
   padding: 25px;
   width: 100vw;
-  height: 70vh;
+  height: 75vh;
   position: relative;
   overflow-x: hidden;
   background-color: #f6f2e6;
@@ -151,22 +151,22 @@ h3 {
   align-items: end;
 }
 .banner .carousel > div.c1 {
-  background-image: url(../img/carousel1.jpg);
+  background-image: url(./../img/carousel1.jpg);
   background-size: cover;
   background-position: center;
 }
 .banner .carousel > div.c2 {
-  background-image: url(../img/carousel3.jpg);
+  background-image: url(./../img/carousel3.jpg);
   background-size: cover;
   background-position: center;
 }
 .banner .carousel > div.c3 {
-  background-image: url(../img/carousel2.jpg);
+  background-image: url(./../img/carousel2.jpg);
   background-size: cover;
   background-position: center;
 }
 .banner .title {
-  margin: 25px 0;
+  margin: 50px 0;
   text-align: center;
   color: hsl(83, 23%, 31%);
 }
