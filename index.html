@@ -48,9 +48,9 @@
                     Camilo
                 </p>
                 <div class="progress-container">
-                    <div class="progress"></div>
+                    <div id="progress" class="progress"></div>
                 </div>
-                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/YwodhCjFbQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                <audio id="audio" src="/music/song.mp3"></audio>
             </div>
             <div class="player-content">
                 <div class="album-art">
@@ -61,7 +61,7 @@
                 </div>
                 <div class="player-controls">
                     <div class="control">
-                        <div class="button">
+                        <div class="button" id="backward-button">
                             <i class="fa-solid fa-backward"></i>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                         </div>
                     </div>
                     <div class="control">
-                        <div class="button">
+                        <div class="button" id="forward-button">
                             <i class="fa-solid fa-forward"></i>
                         </div>
                     </div>

@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    const apiKey = "AIzaSyBpsa2cQXnkT8cdwdj10V6D1QaM-jKbZSM";
     if($("body").hasClass("clemente-bojorquez")){
         // loadSong(apiKey);
         $("#play-paused-button").click(function (e) { 
@@ -16,16 +15,36 @@ $(document).ready(function(){
             
         });
     }
+
+    $("#backward-button").click(function(e){
+        prevSong();
+    })
+    $("#forward-button").click(function(e){
+        prevSong();
+    })
+
+    audio.addEventListener("timeupdate", updateProgress);
   
     });
+
+
+    function updateProgress(e){
+        const { duration, currentTime } = e.srcElement;
+        const progressPercent = (currentTime / duration) *100;
+        // console.log(progressPercent);
+        const progress = document.getElementById("progress");
+        progress.style.width = `${progressPercent}%`;
+    }
 
     function pauseSong(){
         $("#play-paused-button i").removeClass("fa-pause");    
         $("#play-paused-button i").addClass("fa-play");    
+        audio.pause();
     }
 
-    async function loadSong(apiKey){
-        const res = await fetch(`https://www.youtube.com/watch?v=YwodhCjFbQ8${apiKey}`)
+    async function loadSong(){
+        const audio = document.getElementById("audio");
+        audio.src = `../music/song.mp3`;
         console.log(res)
     }
 
@@ -34,4 +53,9 @@ $(document).ready(function(){
         $("#play-paused-button i").addClass("fa-pause");    
         
         audio.play();
+    }
+
+    function prevSong(){
+    loadSong();
+    playSong();
     }
