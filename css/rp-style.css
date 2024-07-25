@@ -268,6 +268,14 @@ h3 {
 .tracker-player .player .player-track p {
   margin: 0 0 10px;
 }
+.tracker-player .player .player-track span {
+  font-size: 9px;
+  position: absolute;
+  bottom: 8%;
+}
+.tracker-player .player .player-track span.total-time {
+  right: 5%;
+}
 .tracker-player .player .player-track .progress-container {
   background-color: rgba(35, 31, 32, 0.05);
   border-radius: 5px;

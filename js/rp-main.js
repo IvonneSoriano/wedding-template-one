@@ -1,71 +1,99 @@
-$(document).ready(function(){
-    if($("body").hasClass("clemente-bojorquez")){
+$(document).ready(function () {
+    if ($("body").hasClass("clemente-bojorquez")) {
         // loadSong(apiKey);
-        $("#play-paused-button").click(function (e) { 
+        $("#play-paused-button").click(function (e) {
             // e.preventDefault();
-            const isPlaying = $(".album-art").hasClass("active");   
-            $(".album-art").toggleClass("active");    
+            const isPlaying = $(".album-art").hasClass("active");
+            $(".album-art").toggleClass("active");
             $(".player-track").toggleClass("active");
-            if(isPlaying){
+            if (isPlaying) {
                 pauseSong();
-            }    
-            else{
+            }
+            else {
                 playSong();
             }
-            
+
         });
     }
 
-    $("#backward-button").click(function(e){
+    $("#backward-button").click(function (e) {
         prevSong();
     })
-    $("#forward-button").click(function(e){
+    $("#forward-button").click(function (e) {
         prevSong();
     })
 
     audio.addEventListener("timeupdate", updateProgress);
-  
-    $(".progress-container").click(function(e){
+
+    $(".progress-container").click(function (e) {
         setProgress(e);
     });
-    });
+});
 
-    function setProgress(e){
-        const width = $(".progress-container").width();
-        const clickX = e.offsetX;
-        const duration = audio.duration;
-        audio.currentTime = (clickX / width ) * duration;
-        // const clickX = e.offsetX;
+function setProgress(e) {
+    const width = $(".progress-container").width();
+    const clickX = e.offsetX;
+    const duration = audio.duration;
+    audio.currentTime = (clickX / width) * duration;
+    // const clickX = e.offsetX;
+}
+
+function convertToTime(duration) {
+    if(!isNaN(duration)){
+        let minutes = parseInt(duration / 60, 10);
+        let seconds = parseInt(duration % 60);
+    
+        if (minutes < 10) {
+            minutes = "0" + minutes;
+        }
+        if (seconds < 10) {
+            seconds = "0" + seconds;
+        }
+        return `${minutes}:${seconds}`;
     }
-
-    function updateProgress(e){
-        const { duration, currentTime } = e.srcElement;
-        const progressPercent = (currentTime / duration) *100;
-        // console.log(progressPercent);
-        const progress = document.getElementById("progress");
-        progress.style.width = `${progressPercent}%`;
+    else{
+        return "00:00";
     }
+    
+}
 
-    function pauseSong(){
-        $("#play-paused-button i").removeClass("fa-pause");    
-        $("#play-paused-button i").addClass("fa-play");    
-        audio.pause();
+function updateProgress(e) {
+    const { duration, currentTime } = e.srcElement;
+    const progressPercent = (currentTime / duration) * 100;
+    const progress = document.getElementById("progress");
+    $(".progress-time").html(convertToTime(progressPercent));
+    progress.style.width = `${progressPercent}%`;
+}
+
+function pauseSong() {
+    $("#play-paused-button i").removeClass("fa-pause");
+    $("#play-paused-button i").addClass("fa-play");
+    audio.pause();
+}
+
+async function loadSong() {
+    // const audio = document.getElementById("audio");
+    audio.src = `../music/song.mp3`;
+}
+
+function playSong() {
+    $("#play-paused-button i").removeClass("fa-play");
+    $("#play-paused-button i").addClass("fa-pause");
+    audio.play();
+    $(".total-time").html(convertToTime(audio.duration));
+    
+    
+
+}
+
+function prevSong() {
+    pauseSong();
+    audio.currentTime = 0;
+    $(".progress-time").html("00:00");
+    const isPlaying = $(".album-art").hasClass("active");
+    if (!isPlaying) {
+        $(".album-art").addClass("active");
+        $(".player-track").addClass("active");
     }
-
-    async function loadSong(){
-        const audio = document.getElementById("audio");
-        audio.src = `../music/song.mp3`;
-        console.log(res)
-    }
-
-    function playSong(){
-        $("#play-paused-button i").removeClass("fa-play");    
-        $("#play-paused-button i").addClass("fa-pause");    
-        
-        audio.play();
-    }
-
-    function prevSong(){
-    loadSong();
     playSong();
-    }
+}

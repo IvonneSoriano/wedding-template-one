@@ -22,24 +22,32 @@
       transition: top 0.3s ease;
       box-sizing: unset;
       z-index: 1;
-      p{
+      p {
         margin: 0 0 10px;
       }
-      .progress-container{
-        background-color: rgba(35,31,32,.05);
+      span {
+        font-size: 9px;
+        position: absolute;
+        bottom: 8%;
+        &.total-time{
+          right: 5%;
+        }
+      }
+      .progress-container {
+        background-color: rgba(35, 31, 32, 0.05);
         border-radius: 5px;
         cursor: pointer;
         margin: 10px 0;
         height: 5px;
         width: 100%;
-        .progress{
-            background-color: #fff;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 10px 0;
-            height: 100%;
-            width: 0%;
-            transition: width .1s linear;
+        .progress {
+          background-color: #fff;
+          border-radius: 5px;
+          cursor: pointer;
+          margin: 10px 0;
+          height: 100%;
+          width: 0%;
+          transition: width 0.1s linear;
         }
       }
       &.active {
@@ -68,7 +76,7 @@
         &.active {
           top: -60px;
           box-shadow: 0 0 0 4px #fff7f7, 0 30px 50px -15px #afb7c1;
-          &::after{
+          &::after {
             z-index: 1;
             animation: rotateCover 3s linear 0s infinite forwards;
           }
