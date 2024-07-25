@@ -25,8 +25,18 @@ $(document).ready(function(){
 
     audio.addEventListener("timeupdate", updateProgress);
   
+    $(".progress-container").click(function(e){
+        setProgress(e);
+    });
     });
 
+    function setProgress(e){
+        const width = $(".progress-container").width();
+        const clickX = e.offsetX;
+        const duration = audio.duration;
+        audio.currentTime = (clickX / width ) * duration;
+        // const clickX = e.offsetX;
+    }
 
     function updateProgress(e){
         const { duration, currentTime } = e.srcElement;
